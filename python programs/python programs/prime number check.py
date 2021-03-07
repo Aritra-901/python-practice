@@ -1,8 +1,23 @@
-def prime_number(x):
-    if x>1:
-        for i in range(2,x):
-            if(x%1==0):
-                return "it is prime"
+
+def prime(a):
+    s ="not prime"
+    if a>1:
+        for i in range(2,a):
+           
+            if(a%i)==0:
+             
+               s="not prime"
+            
+               break
+        
             else:
-                return "not prime"
-print(prime_number(9))            
+             
+                s="prime"
+             
+    else:
+                 
+        s = "not prime"
+                 
+    return(s)
+            
+print(prime(3))
